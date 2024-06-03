@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conlanthanide-actinide-titlet="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * 
+        {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .alkali-metal{
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;    
+            background-color: rgb(225, 151, 176);
+        }
+        .alkaline-earth{
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: rgb(240, 182, 123);
+        }
+        .transition-metal{
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: rgb(253, 253, 159);
+        }
+        .post-transition-metal{
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: greenyellow;
+        }
+        .metalloid{
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: #2AAA8A;
+        }
+        .nonmetal{
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: rgb(108, 201, 224);
+        }
+        .halogen{
+            border: 1px solid black;
+            text-align: center;
+            width: 30px;
+            height: 30PX;
+            background-color: rgb(93, 93, 139);
+        }
+        .noble-gas{
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: #A020F0;
+        }
+        .lanthanide-actinide{
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: #D3D3D3;
+        }
+        .lanthanide-actinide-title{
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: rgba(165, 109, 17, 0.547);
+        }
+        .empty{
+            
+            border: 1px solid black;
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: white;
+        }
+        .fnl{
+            border: 1px solid rgb(255, 255, 255);
+            text-align: center;
+            width: 30PX;
+            height: 30PX;
+            background-color: white;
+            color: white;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        <h1>THE PERIODIC TABLE</h1>
+        <h2>Muhammad Ahsan Khan</h2>
+        <h3>Roll No: WMA-254202</h3>
+    </p>
+    <table >
+        <tr >
+            <th class="alkali-metal">H</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th class="noble-gas">He</th>
+        </tr>
+        <tr >
+            <th class="alkali-metal">Li</th>
+            <th class="alkaline-earth">Be</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th class="metalloid">B</th>
+            <th class="nonmetal">C</th>
+            <th class="nonmetal">N</th>
+            <th class="nonmetal">O</th>
+            <th class="halogen">F</th>
+            <th class="noble-gas">Ne</th>
+        </tr>
+        <tr >
+            <th class="alkali-metal">Na</th>
+            <th class="alkaline-earth">Mg</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th class="post-transition-metal">AI</th>
+            <th class="metalloid">Si</th>
+            <th class="nonmetal">P</th>
+            <th class="nonmetal">S</th>
+            <th class="halogen">Cl</th>
+            <th class="noble-gas">Ar</th>
+        </tr>
+        <tr >
+            <th class="alkali-metal">K</th>
+            <th class="alkaline-earth">Ca</th>
+            <th class="transition-metal">Sc</th>
+            <th class="transition-metal">Ti</th>
+            <th class="transition-metal">V</th>
+            <th class="transition-metal">Cr</th>
+            <th class="transition-metal">Mn</th>
+            <th class="transition-metal">Fe</th>
+            <th class="transition-metal">Co</th>
+            <th class="transition-metal">Ni</th>
+            <th class="transition-metal">Cu</th>
+            <th class="transition-metal">Zn</th>
+            <th class="post-transition-metal">Ga</th>
+            <th class="metalloid">Ge</th>
+            <th class="metalloid">As</th>
+            <th class="metalloid">Se</th>
+            <th class="halogen">Br</th>
+            <th class="noble-gas">Kr</th>
+        </tr>
+        <tr >
+            <th class="alkali-metal">Rb</th>
+            <th class="alkaline-earth">Sr</th>
+            <th class="transition-metal">Y</th>
+            <th class="transition-metal">Zr</th>
+            <th class="transition-metal">Nb</th>
+            <th class="transition-metal">Mo</th>
+            <th class="transition-metal">Tc</th>
+            <th class="transition-metal">Ru</th>
+            <th class="transition-metal">Rh</th>
+            <th class="transition-metal">Pd</th>
+            <th class="transition-metal">Ag</th>
+            <th class="transition-metal">Cd</th>
+            <th class="post-transition-metal">In</th>
+            <th class="post-transition-metal">Sn</th>
+            <th class="metalloid">Sb</th>
+            <th class="metalloid">Te</th>
+            <th class="halogen">I</th>
+            <th class="noble-gas">Xe</th>
+        </tr>
+        <tr >
+            <th class="alkali-metal">Cs</th>
+            <th class="alkaline-earth">Ba</th>
+            <th class="transition-metal">La</th>
+            <th class="transition-metal">Hf</th>
+            <th class="transition-metal">Ta</th>
+            <th class="transition-metal">W</th>
+            <th class="transition-metal">Re</th>
+            <th class="transition-metal">Os</th>
+            <th class="transition-metal">Ir</th>
+            <th class="transition-metal">Pt</th>
+            <th class="transition-metal">Au</th>
+            <th class="transition-metal">Hg</th>
+            <th class="post-transition-metal">Ti</th>
+            <th class="post-transition-metal">Pb</th>
+            <th class="post-transition-metal">Bi</th>
+            <th class="metalloid">Po</th>
+            <th class="halogen">At</th>
+            <th class="noble-gas">Rn</th>
+        </tr>
+        <tr >
+            <th class="alkali-metal">Fr</th>
+            <th class="alkaline-earth">Ra</th>
+            <th class="transition-metal">Ac</th>
+            <th class="lanthanide-actinide">Rf</th>
+            <th class="lanthanide-actinide">Db</th>
+            <th class="lanthanide-actinide">Sg</th>
+            <th class="lanthanide-actinide">Bh</th>
+            <th class="lanthanide-actinide">Hs</th>
+            <th class="lanthanide-actinide">Mt</th>
+            <th class="lanthanide-actinide">Ds</th>
+            <th class="lanthanide-actinide">Rg</th>
+            <th class="lanthanide-actinide">Cn</th>
+            <th class="lanthanide-actinide">Nh</th>
+            <th class="lanthanide-actinide">Fl</th>
+            <th class="lanthanide-actinide">Mc</th>
+            <th class="lanthanide-actinide">Lv</th>
+            <th class="lanthanide-actinide">Ts</th>
+            <th class="lanthanide-actinide">Og</th>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr >
+            <th class="fnl">Hh</th>
+            <th class="fnl">Hh</th>
+            <th class="fnl">Hh</th>
+            <th class="fnl">hh</th>
+            <th class="lanthanide-actinide-title">Ce</th>
+            <th class="lanthanide-actinide-title">Pr</th>
+            <th class="lanthanide-actinide-title">Nd</th>
+            <th class="lanthanide-actinide-title">Pm</th>
+            <th class="lanthanide-actinide-title">Sm</th>
+            <th class="lanthanide-actinide-title">Eu</th>
+            <th class="lanthanide-actinide-title">Gd</th>
+            <th class="lanthanide-actinide-title">Tb</th>
+            <th class="lanthanide-actinide-title">Dy</th>
+            <th class="lanthanide-actinide-title">Ho</th>
+            <th class="lanthanide-actinide-title">Er</th>
+            <th class="lanthanide-actinide-title">Tm</th>
+            <th class="lanthanide-actinide-title">Yb</th>
+            <th class="lanthanide-actinide-title">Lu</th>
+        </tr>
+    </table>
+    <table  >
+        <tr >
+            <th class="fnl">hh</th>
+            <th class="fnl">hh</th>
+            <th class="fnl">hh</th>
+            <th class="fnl">hh</th>
+            <th class="empty">Th</th>
+            <th class="empty">Pa</th>
+            <th class="empty">U</th>
+            <th class="empty">Np</th>
+            <th class="empty">Pu</th>
+            <th class="empty">Am</th>
+            <th class="empty">Cm</th>
+            <th class="empty">Bk</th>
+            <th class="empty">Cf</th>
+            <th class="empty">Es</th>
+            <th class="empty">Fm</th>
+            <th class="empty">Md</th>
+            <th class="empty">No</th>
+            <th class="empty">Lr</th>
+        </tr>
+    </table>
+</body>
+</html>
