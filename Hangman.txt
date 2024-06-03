@@ -1,0 +1,207 @@
+print("Welcome in Hangman Game !")
+while True:
+        
+    import random
+    display = []
+    lives = 6
+    stages = [
+    ''' 
+            
+            ^================^                
+            |                |
+            0                |
+           /|\               |
+           / \               |
+                             |
+                             |
+                             |
+                    ---------------------
+                    ---------------------
+    ''',
+    '''
+            
+            ^================^                
+            |                |
+            0                |
+           /|\               |
+           /                 |
+                             |
+                             |
+                             |
+                    ---------------------
+                    ---------------------
+    ''',
+    '''     
+            ^================^                
+            |                |
+            0                |
+           /|\               |
+                             |
+                             |
+                             |
+                             |
+                    ---------------------
+                    ---------------------
+    ''',
+       '''  
+            ^================^                
+            |                |
+            0                |
+           /|                |
+                             |
+                             |
+                             |
+                             |
+                    ---------------------
+                    ---------------------
+    ''',
+    '''     
+            ^================^                
+            |                |
+            0                |
+            |                |
+                             |
+                             |
+                             |
+                             |
+                    ---------------------
+                    ---------------------
+    ''',
+    '''     
+            ^================^                
+            |                |
+            0                |
+                             |
+                             |
+                             |
+                             |
+                             |
+                    ---------------------
+                    ---------------------
+    ''',
+    '''
+            
+            ^================^                
+            |                |
+                             |
+                             |
+                             |
+                             |
+                             |
+                             |
+                    ---------------------
+                    ---------------------
+    ''']
+    def user_choice():
+        user = int(input('''What kind of word you wanna Guess :
+                    1_ cities_of_pakistan
+                    2_ country_name
+                    3_ fruit_names
+                    Enter the corresponding number :'''))
+        cities_of_pakistan = ["karachi"
+                 ,"lahore"
+                 ,"islamabad"
+                 ,"faisalabad"
+                 ,"rawalpindi"
+                 ,"multan"
+                 ,"peshawar"
+                 ,"quetta"
+                 ,"sialkot"
+                 ,"gujranwala"
+                 ,"abbottabad"
+                 ,"bahawalpur"
+                 ,"sargodha"
+                 ,"sukkur"
+                 ,"jhang"
+                 ,"larkana"
+                 ,"rahim Yar Khan"
+                 ,"sahiwal"
+                 ,"mardan"
+                 ,"nawabshah"]
+        
+        country_name = ["argentina"
+                        ,"australia"
+                        ,"canada"
+                        ,"brazil"
+                        ,"germany"
+                        ,"india"
+                        ,"japan"
+                        ,"mexico"
+                        ,"russia"
+                        ,"china"
+                        ,"france"
+                        ,"italy"
+                        ,"egypt"
+                        ,"south Africa"
+                        ,"turkey"
+                        ,"united Kingdom"
+                        ,"vietnam"
+                        ,"saudi Arabia"
+                        ,"nigeria"
+                        ,"sweden"]
+        fruit_names = ["pineapple"
+                    ,"cranberry"
+                    ,"passionfruit"
+                    ,"apricot"
+                    ,"durian"
+                    ,"dragon fruit"
+                    ,"banana"
+                    ,"custard apple"
+                    ,"apple"
+                    ,"mulberry" 
+                    ,"rambutan"
+                    ,"loquat"
+                    ,"watermelon"
+                    ,"papaya"
+                    ,"mango"
+                    ,"pumpkin" 
+                    ,"guava"
+                    ,"peach"
+                    ,"lychee"
+                    ,"pomegranate"]
+        if user == 1:
+            items = cities_of_pakistan
+            print("You Choose a word form cities_of_pakistan !:")
+        elif user == 2:
+            items = country_name
+            print("You Choose a word form country_names !:")
+        elif user == 3:
+            items = fruit_names
+            print("You Choose a word form Fruit_names !:")
+        else:
+            print("Choose a valid option!:")
+             
+        return random.choice(items)
+    
+    random_items = user_choice()
+    
+    for i in range(len(random_items)):
+        display += '_'
+    print('\n',display) 
+    guess_true = False
+    while not guess_true:
+        user_guess = input("\nGuess a letter :").lower()
+        for position in range(len(random_items)):
+            letter = random_items[position]
+            if user_guess.lower() == letter.lower() or user_guess.lower() == letter.lower():
+                display[position] = user_guess
+        print(display)
+        
+        if user_guess not in random_items:
+            lives -= 1
+            if lives == 0:
+                guess_true = True
+                print("\nYou Lose!")
+        if '_' not in display:
+            guess_true = True
+            print("\nCongratulations! You guess the word correctly.")
+        print(stages[lives])
+    
+    print(f"\nCorrect word is {random_items} :")
+    play_again = input("\nDo you want to play again (Y/N) :")
+    
+    if play_again.upper() == 'Y':
+        continue
+    else:
+        print("Thank you!")
+        break
